@@ -10,7 +10,7 @@ import {
 export function Header() {
   return (
     <HeaderContainer>
-      <Logo src="logo.png"/>
+      <Logo src="logo.png" />
       <MenuContainer>
         <CityButton>
           <MapPin size="22" weight="fill" />

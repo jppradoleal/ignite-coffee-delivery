@@ -5,7 +5,7 @@ export const CoffeeCardContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: ${props => props.theme['gray-200']};
+  background-color: ${(props) => props.theme["gray-200"]};
   padding: 1rem;
   border-radius: 6px 36px;
 
@@ -24,7 +24,7 @@ export const CoffeeCardContainer = styled.div`
 
   .description {
     text-align: center;
-    margin-top: .5rem;
+    margin-top: 0.5rem;
     font-size: 0.875rem;
     line-height: 1.3;
     color: ${(props) => props.theme["gray-600"]};

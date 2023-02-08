@@ -1,5 +1,11 @@
 import { Minus, Plus, ShoppingCart } from "phosphor-react";
-import { AmountSelector, Badge, BuyButton, CoffeeCardContainer, Price } from "./styles";
+import {
+  AmountSelector,
+  Badge,
+  BuyButton,
+  CoffeeCardContainer,
+  Price,
+} from "./styles";
 
 export function CoffeeCard() {
   return (
