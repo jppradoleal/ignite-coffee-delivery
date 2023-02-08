@@ -10,7 +10,7 @@ export const CoffeeCardContainer = styled.div`
   border-radius: 6px 36px;
 
   img {
-    margin-top: -2rem;
+    margin-top: -2.75rem;
     width: 8rem;
   }
 
@@ -37,6 +37,12 @@ export const CoffeeCardContainer = styled.div`
     align-items: stretch;
   }
 `;
+
+export const BadgesContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: .25rem;
+`
 
 export const Badge = styled.span`
   background-color: ${(props) => props.theme["yellow-100"]};

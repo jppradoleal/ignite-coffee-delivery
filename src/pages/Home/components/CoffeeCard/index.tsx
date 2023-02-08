@@ -2,23 +2,39 @@ import { Minus, Plus, ShoppingCart } from "phosphor-react";
 import {
   AmountSelector,
   Badge,
+  BadgesContainer,
   BuyButton,
   CoffeeCardContainer,
   Price,
 } from "./styles";
 
-export function CoffeeCard() {
+interface Coffee {
+  id: number;
+  image: string;
+  types: string[];
+  title: string;
+  description: string;
+  price: number;
+}
+
+interface CoffeeCardProps {
+  coffee: Coffee;
+}
+
+export function CoffeeCard({ coffee }: CoffeeCardProps) {
   return (
     <CoffeeCardContainer>
-      <img src="americano.png" alt="" />
-      <Badge>Tradicional</Badge>
-      <h2>Expresso Tradicional</h2>
-      <p className="description">
-        O tradicional café feito com água quente e grãos moídos
-      </p>
+      <img src={coffee.image} alt="" />
+      <BadgesContainer>
+        {coffee.types.map((type) => (
+          <Badge>{type}</Badge>
+        ))}
+      </BadgesContainer>
+      <h2>{coffee.title}</h2>
+      <p className="description">{coffee.description}</p>
       <footer>
         <Price>
-          R$ <strong>9,90</strong>
+          R$ <strong>{coffee.price / 100}</strong>
         </Price>
 
         <AmountSelector>
