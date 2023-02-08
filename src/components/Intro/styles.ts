@@ -40,6 +40,10 @@ export const BadgeContainer = styled.div`
   p {
     white-space: nowrap;
   }
+  
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 const BADGE_COLORS = {
