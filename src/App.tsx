@@ -1,13 +1,14 @@
 import { ThemeProvider } from "styled-components";
-import { CoffeeCard } from "./components/CoffeeCard";
-import { ItemGrid } from "./components/ItemGrid";
+import { Intro } from "./components/Intro";
+import { Products } from "./components/Products";
 import { GlobalStyle } from "./styles/global";
 import { defaultTheme } from "./styles/theme/default";
 
 function App() {
   return (
     <ThemeProvider theme={defaultTheme}>
-      <ItemGrid />
+      <Intro />
+      <Products />
       <GlobalStyle />
     </ThemeProvider>
   );
